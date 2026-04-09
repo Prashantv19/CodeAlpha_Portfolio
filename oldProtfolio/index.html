@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+</head>
+
+<body>
+    
+
+    <header>
+        <div class="header-container">
+            <div class="logo">My Portfolio</div>
+    
+            <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- ☰ Hamburger icon -->
+    
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <section id="home" class="intro">
+        <div class="profile-pic">
+            <img src="assets/avatar.jpg" alt="Profile Picture">
+        </div>
+        <h1>I am a coder, software <span>developer</span></h1>
+        <p>I am a software developer and front-end developer with over 1 years of experience.</p>
+        <div class="buttons">
+            <button id="connect-btn">Let's connect</button>
+            <button id="download-cv-btn">Download CV</button>
+        </div>
+        
+    </section>
+
+    <section id="experience-icons" class="experience-icons">
+        <h3>Experience With</h3>
+        <div class="icons">
+            <img src="assets/html.png" alt="HTML5">
+            <img src="assets/css.png" alt="CSS3">
+            <img src="assets/js.png" alt="JavaScript">
+            <img src="assets/react.png" alt="React">
+            <img src="assets/java.png" alt="java">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <a href="https://github.com/Prashantv19/CodeAlpha_WordCounter.git" target="_blank" >
+            <img src="assets/projects/java.png" alt="Word Counter App">
+            <h3>Word Counter App</h3>
+            <p>Java Swing</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://github.com/Prashantv19/CodeAlpha_Calculator" target="_blank">
+                <img src="assets/projects/calculator.png" alt="Calculator">
+                <h3>Calculator</h3>
+                <p>HTML CSS JavaScript</p>
+            </a>
+        </div>
+        
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>Front-end Developer Intern at Code Alpha</h3>
+                <p class="date">15 April - 15 May</p>
+                <p class="description">I build a calculator, Portfolio and a fully functional image gallary.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Software Developer Intern at Code Alpha</h3>
+                <p class="date">10 April - 10 July</p>
+                <p class="description">I build a word counter app in java and swing.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Get in Touch</h2>
+        <p>If you’d like to chat about a project or just say hello, feel free to drop a message!</p>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Follow me on social media or drop me an email!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/erprashant19" target="_blank" class="social-link">
+                        <img src="assets/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Prashantv19" class="social-link">
+                        <img src="assets/github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://x.com/prashant_v02" class="social-link">
+                        <img src="assets/twitter.png" alt="Twitter">
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <p>Email: <a href="mailto:prashantv1902@gmail.com">prashantv1902@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Prashant Vishwakarma. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="mailto:prashantv1902@gmail.com">Email</a> |
+            <a href="https://www.linkedin.com/in/erprashant19" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Prashantv19" target="_blank">GitHub</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="firebase-config.js"></script>
+</body>
+
+</html>
